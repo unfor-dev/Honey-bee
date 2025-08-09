@@ -1,0 +1,23 @@
+.meet-us-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+.meet-us-content{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 35%;
+}
+.meet-us-content h2{
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.meet-us-content p{
+  font-size: 0.9rem;
+  line-height: 2.5rem;
+}

@@ -19,3 +19,9 @@ body {
   font-family: 'Lora';
   /* font-family: 'Crete Round'; */
 }
+button{
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+}

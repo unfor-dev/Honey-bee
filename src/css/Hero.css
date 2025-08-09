@@ -7,8 +7,17 @@
 }
 .hero-wrapper{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
   margin-bottom: 100px;
+}
+.hero-wrapper h2{
+  font-size: 4.5rem;
+  font-weight: 600;
+  color: #ffc24b;
+}
+.hero-wrapper img{
+  margin-top: -130px;
 }
