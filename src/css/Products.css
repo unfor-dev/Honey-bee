@@ -1,0 +1,10 @@
+.products-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
