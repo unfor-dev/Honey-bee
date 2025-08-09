@@ -1,0 +1,16 @@
+<svg viewBox="0 0 48.5 4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48.500000" height="4.000000" fill="none" customFrame="#000000">
+	<defs>
+		<linearGradient id="paint_linear_235" x1="-2" x2="8.5" y1="-1" y2="6" gradientUnits="userSpaceOnUse">
+			<stop stop-color="rgb(252,192,75)" offset="0" stop-opacity="1" />
+			<stop stop-color="rgb(168,128,56)" offset="1" stop-opacity="1" />
+		</linearGradient>
+		<linearGradient id="paint_linear_236" x1="7" x2="49" y1="2" y2="2" gradientUnits="userSpaceOnUse">
+			<stop stop-color="rgb(255,194,75)" offset="0" stop-opacity="1" />
+			<stop stop-color="rgb(88,65,43)" offset="1" stop-opacity="0.49000001" />
+		</linearGradient>
+	</defs>
+	<g id="Group 1">
+		<path id="Polygon 8" d="M3.63205 0.942265C3.69393 0.977992 3.73205 1.04402 3.73205 1.11547L3.73205 2.88453C3.73205 2.95598 3.69393 3.02201 3.63205 3.05773L2.1 3.94227C2.03812 3.97799 1.96188 3.97799 1.9 3.94227L0.367949 3.05773C0.306069 3.02201 0.267949 2.95598 0.267949 2.88453L0.267949 1.11547C0.267949 1.04402 0.306069 0.977992 0.367949 0.942265L1.9 0.057735C1.96188 0.0220085 2.03812 0.0220085 2.1 0.057735L3.63205 0.942265Z" fill="url(#paint_linear_235)" fill-rule="evenodd" />
+		<path id="Line 1" d="M7 2L48 2" stroke="url(#paint_linear_236)" stroke-linecap="round" stroke-width="1" />
+	</g>
+</svg>

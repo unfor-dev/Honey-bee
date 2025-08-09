@@ -1,0 +1,14 @@
+.hero{
+  background-image: url('./header-bg.svg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+.hero-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-bottom: 100px;
+}

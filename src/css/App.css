@@ -1,0 +1,21 @@
+.container {
+  max-width: 1300px;
+  margin: 0 auto; /* markazga joylash */
+  padding: 0 0.2rem; /* yonlardan ichki bo‘sh joy */
+  box-sizing: border-box;
+  width: 100%;
+}
+.hero-container{
+  background-image: url('./header-bg.svg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  
+}
+body {
+  background-color: #0b0b0b;
+  color: #fff9c0;
+  font-family: 'Lora';
+  /* font-family: 'Crete Round'; */
+}
