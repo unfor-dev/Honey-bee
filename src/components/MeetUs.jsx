@@ -2,7 +2,7 @@ import "../css/MeetUs.css"
 
 function MeetUs() {
     return  <>
-        <div className="container">
+        <div id="meet-us" className="container section">
           <div className="about-us-header-wrapper">
             
             <div className="about-us-header">

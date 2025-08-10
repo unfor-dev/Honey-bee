@@ -2,7 +2,7 @@ import "../css/Footer.css"
 
 function Footer() {
     return  <>
-      <div className="footer-container">
+      <div id="footer" className="footer-container section">
         <div className="container">
           <div className="footer-wrapper">
           <div className="footer-info-wrapper">

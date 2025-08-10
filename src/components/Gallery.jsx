@@ -2,7 +2,7 @@ import "../css/Gallery.css"
 
 function Gallery() {
     return  <>
-        <div className="gallery-container">
+        <div id="gallery" className="gallery-container section">
           <div className="container">
             <div className="about-us-header-wrapper">
               

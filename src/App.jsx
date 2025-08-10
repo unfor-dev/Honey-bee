@@ -7,6 +7,7 @@ import Gallery from "./components/Gallery.jsx";
 import Beauty from "./components/Beauty.jsx";
 import MeetUs from "./components/MeetUs.jsx";
 import Footer from "./components/Footer.jsx";
+import BeeModel from "./components/BeeModel.jsx";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Beauty />
       <MeetUs />
       <Footer />
+      <BeeModel />
     </>
   );
 }

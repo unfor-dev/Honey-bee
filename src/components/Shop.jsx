@@ -2,7 +2,7 @@ import "../css/Shop.css"
 
 function Shop() {
     return  <>
-        <div className="container">
+        <div id="shop" className="container section">
           <div className="about-us-header-wrapper">
             
             <div className="about-us-header">

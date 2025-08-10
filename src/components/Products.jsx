@@ -2,7 +2,7 @@ import "../css/Products.css"
 
 function Products() {
     return  <>
-        <div className="container">
+        <div id="products" className="container section">
           <div className="about-us-header-wrapper">
             
             <div className="about-us-header">

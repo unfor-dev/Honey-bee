@@ -2,7 +2,7 @@ import "../css/Beauty.css"
 
 function Beauty() {
     return  <>
-        <div className="container">
+        <div id="beauty" className="container section">
           <div className="about-us-header-wrapper">
             
             <div className="about-us-header">
