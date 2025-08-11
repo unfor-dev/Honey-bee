@@ -5,16 +5,13 @@ import { gsap } from "gsap";
 
 function BeeModel() {
   useEffect(() => {
-    // Camera setup
     const camera = new THREE.PerspectiveCamera(10, window.innerWidth / window.innerHeight, 0.1, 1000);
     camera.position.z = 13;
 
-    // Scene setup
     const scene = new THREE.Scene();
     let bee;
     let mixer;
 
-    // Loader
     const loader = new GLTFLoader();
     loader.load("/demon_bee_full_texture.glb", (gltf) => {
       bee = gltf.scene;
@@ -28,13 +25,11 @@ function BeeModel() {
       modelMove();
     });
 
-    // Renderer
     const renderer = new THREE.WebGLRenderer({ alpha: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
     const container = document.getElementById("container3D");
     container.appendChild(renderer.domElement);
 
-    // Lights
     const ambientLight = new THREE.AmbientLight(0xffffff, 1.3);
     scene.add(ambientLight);
 
@@ -42,7 +37,6 @@ function BeeModel() {
     topLight.position.set(500, 500, 500);
     scene.add(topLight);
 
-    // Animation loop
     const reRender3D = () => {
       requestAnimationFrame(reRender3D);
       renderer.render(scene, camera);
@@ -50,19 +44,31 @@ function BeeModel() {
     };
     reRender3D();
 
-    // Model positions per section
-    let arrPositionModel = [
-      { id: "hero", position: { x: -0.5, y: -0.3, z: 0 }, rotation: { x: 0, y: 1.5, z: 0 } },
-      { id: "about-us", position: { x: 1, y: -1, z: -5 }, rotation: { x: 0.5, y: -0.5, z: 0 } },
-      { id: "products", position: { x: -1, y: -1, z: -5 }, rotation: { x: 0, y: 0.5, z: 0 } },
-      { id: "shop", position: { x: 0.8, y: -1, z: 0 }, rotation: { x: 0.3, y: -0.5, z: 0 } },
-      { id: "gallery", position: { x: -0.5, y: -0.3, z: 0 }, rotation: { x: 0, y: 1.5, z: 0 } },
-      { id: "beauty", position: { x: 0.8, y: -1, z: 0 }, rotation: { x: 0.3, y: -0.5, z: 0 } },
-      { id: "meet-us", position: { x: 1, y: -0.7, z: 0 }, rotation: { x: 0.3, y: 1.3, z: 0 } },
+    // Positions for desktop
+    const arrPositionModelDesktop = [
+      { id: "hero", position: { x: -0.5, y: -0.3, z: 0 }, rotation: { x: 0, y: 1.5, z: 0 }, scale: 0.4 },
+      { id: "about-us", position: { x: 1.3, y: -0.4, z: -5 }, rotation: { x: 0.5, y: -0.5, z: 0 }, scale: 0.4 },
+      { id: "products", position: { x: -1, y: -1, z: -5 }, rotation: { x: 0, y: 0.5, z: 0 }, scale: 0.4 },
+      { id: "shop", position: { x: 0.8, y: -1, z: 0 }, rotation: { x: 0.3, y: -0.5, z: 0 }, scale: 0.4 },
+      { id: "gallery", position: { x: -0.5, y: -0.3, z: 0 }, rotation: { x: 0, y: 1.5, z: 0 }, scale: 0.4 },
+      { id: "beauty", position: { x: 0.8, y: -1, z: 0 }, rotation: { x: 0.3, y: -0.5, z: 0 }, scale: 0.4 },
+      { id: "meet-us", position: { x: 1, y: -0.7, z: 0 }, rotation: { x: 0.3, y: 1.3, z: 0 }, scale: 0.4 },
     ];
 
-    // Move model based on scroll
+    // Positions for mobile
+    const arrPositionModelMobile = [
+      { id: "hero", position: { x: -0.4, y: -0.1, z: 0 }, rotation: { x: 0, y: 1.5, z: 0 }, scale: 0.25 },
+      { id: "about-us", position: { x: 0.5, y: -0.2, z: -5 }, rotation: { x: 0.1, y: 0.3, z: 0 }, scale: 0.25 },
+      { id: "products", position: { x: -0.5, y: 0.8, z: -5 }, rotation: { x: 0, y: 0.5, z: 0 }, scale: 0.25 },
+      { id: "shop", position: { x: 0.3, y: -1.2, z: 0 }, rotation: { x: 0.3, y: -0.5, z: 0 }, scale: 0.25 },
+      { id: "gallery", position: { x: 0, y: -0.5, z: 0 }, rotation: { x: 0, y: 1.5, z: 0 }, scale: 0.25 },
+      { id: "beauty", position: { x: 0.3, y: -1.2, z: 0 }, rotation: { x: 0.3, y: -0.5, z: 0 }, scale: 0.25 },
+      { id: "meet-us", position: { x: 0.5, y: -1, z: 0 }, rotation: { x: 0.3, y: 1.3, z: 0 }, scale: 0.25 },
+    ];
+
     const modelMove = () => {
+      if (!bee) return;
+
       const sections = document.querySelectorAll(".section");
       let currentSection;
       sections.forEach((section) => {
@@ -72,32 +78,32 @@ function BeeModel() {
         }
       });
 
-      let position_active = arrPositionModel.findIndex((val) => val.id === currentSection);
+      const arr = window.innerWidth <= 750 ? arrPositionModelMobile : arrPositionModelDesktop;
+      let position_active = arr.findIndex((val) => val.id === currentSection);
+
       if (position_active >= 0) {
-        let new_coordinates = arrPositionModel[position_active];
-        gsap.to(bee.position, { ...new_coordinates.position, duration: 3, ease: "power1.out" });
-        gsap.to(bee.rotation, { ...new_coordinates.rotation, duration: 3, ease: "power1.out" });
+        let coords = arr[position_active];
+        gsap.to(bee.position, { ...coords.position, duration: 1.5, ease: "power1.out" });
+        gsap.to(bee.rotation, { ...coords.rotation, duration: 1.5, ease: "power1.out" });
+        gsap.to(bee.scale, { x: coords.scale, y: coords.scale, z: coords.scale, duration: 1.5 });
       }
     };
 
-    window.addEventListener("scroll", () => {
-      if (bee) modelMove();
-    });
-
+    window.addEventListener("scroll", modelMove);
     window.addEventListener("resize", () => {
       renderer.setSize(window.innerWidth, window.innerHeight);
       camera.aspect = window.innerWidth / window.innerHeight;
       camera.updateProjectionMatrix();
+      modelMove(); // Update model when resizing
     });
 
-    // Cleanup on unmount
     return () => {
       container.removeChild(renderer.domElement);
       window.removeEventListener("scroll", modelMove);
     };
   }, []);
 
-  return <div id="container3D" style={{ top: 0, left: 0, }} />;
+  return <div id="container3D" style={{ top: 0, left: 0 }} />;
 }
 
 export default BeeModel;

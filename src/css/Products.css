@@ -9,3 +9,28 @@
     margin-top: 50px;
     margin-bottom: 80px;
 }
+@media only screen and (max-width: 900px){
+    .products-image{
+        width: 150px;
+        height: 150px;
+    }
+    .products-wrapper{
+        gap: 20px;
+        width: 95%;
+    }
+}
+@media only screen and (max-width: 680px){
+    .products-image{
+        width: 120px;
+        height: 120px;
+    }
+    .products-wrapper{
+        gap: 30px;
+    }
+}
+@media only screen and (max-width: 430px){
+    .products-image{
+        width: 110px;
+        height: 110px;
+    }
+}

@@ -23,7 +23,7 @@ function AboutUs() {
                 <button className="about-us-button">More</button>
               </div>
               <div className="about-us-images">
-                  <img className="about-us-image" src="./section-1-2.svg" width='800' height='800' alt="Honey Jam" />
+                  <img className="about-us-image" src="./section-1-2.svg" width='500' height='500' alt="Honey Jam" />
                   <img className="about-us-image-absolute" src="./section-1-3.svg" width='600' height='600' alt="Honey Jam" />
               </div>
               </div>

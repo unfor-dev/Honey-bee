@@ -21,3 +21,31 @@
 .hero-wrapper img{
   margin-top: -130px;
 }
+@media only screen and (max-width: 750px) {
+  .hero-wrapper h2{
+    font-size: 3.5rem;
+  }
+  .hero-wrapper img{
+    margin-top: -100px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .hero-wrapper h2{
+    font-size: 3rem;
+  }
+  .hero-wrapper img{
+    margin-top: -100px;
+    width: 550px;
+    height: 550px;
+  }
+}
+@media only screen and (max-width: 510px) {
+  .hero-wrapper h2{
+    font-size: 2.5rem;
+  }
+  .hero-wrapper img{
+    margin-top: -60px;
+    width: 450px;
+    height: 450px;
+  }
+}
