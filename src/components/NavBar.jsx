@@ -30,11 +30,11 @@ function NavBar() {
 
                     {/* Navigation links (center) */}
                     <ul className="navbar-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#products">Products</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#homee">Home</a></li>
+                        <li><a href="#aboutt">About Us</a></li>
+                        <li><a href="#productss">Products</a></li>
+                        <li><a href="#contactt">Contact</a></li>
+                        <li><a href="#galleryy">Gallery</a></li>
                     </ul>
 
                     {/* Action buttons (right) */}
