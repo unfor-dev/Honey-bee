@@ -1,141 +1,27 @@
-.about-us-header-wrapper{
+/* ===== About Us - Header ===== */
+.about-us-header-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 10vh;
 }
-.about-us-image{
-  margin-top: 20px;
-  margin-right: 140px;
-}
-.about-us-images .about-us-image-absolute{
-    position: absolute;
-    top: -30px;
-    right: 110px;
-}
-.about-us-content{
+
+.about-us-header {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 60%;
-}
-.about-us-content p{
-    width: 80%;
-    font-size: 1.1rem;
-    line-height: 3rem;
-}
-@media only screen and (max-width: 1300px) {
-  .about-us-wrapper{
-    padding: 10px;
-  }
-}
-@media only screen and (max-width: 1100px) {
-  .about-us-image{
-    margin-top: 20px;
-    margin-right: 80px;
-  }
-  .about-us-image-absolute{
-    right: 40px !important;
-    top: -10px !important;
-  }
-  .about-us-content p{
-    width: 100%;
-    font-size: 1rem;
-    line-height: 2.5rem;
-  }
-}
-@media only screen and (max-width: 870px) {
-  .about-us-image{
-    margin-top: 20px;
-    width: 400px;
-    height: 400px;
-    margin-right: 0px;
-  }
-  .about-us-image-absolute{
-    right: 0px !important;
-    width: 450px;
-    height: 450px;
-    top: 20px !important;
-  }
-  .about-us-content p{
-    width: 100%;
-    font-size: 1rem;
-    line-height: 2.5rem;
-  }
-  .about-us-header h2{
-    font-size: 2rem;
-  }
-}
-@media only screen and (max-width: 700px){
-  .about-us-wrapper{
-    flex-direction: column-reverse;
-    position: relative;
-    display: flex;
-    justify-content: flex-start;
     align-items: center;
-    flex-wrap: nowrap;
-  }
-  .about-us-image{
-    margin-top: 30px;
-    width: 450px;
-    height: 450px;
-  }
-  .about-us-image-absolute{
-    right: 100px !important;
-    width: 450px;
-    height: 450px;
-    top: 45px !important;
-  }
-  .about-us-content{
-    width: 90%;
-  }
-  .about-us-content p{
-    width: 100%;
-    font-size: 1.1rem;
-    line-height: 2.3rem;
-  }
-  .about-us-header h2{
-    font-size: 2.2rem;
-  }
-}
-@media only screen and (max-width: 600px){
-  .about-us-header h2{
-    font-size: 1.7rem;
-  }
-  .about-us-content p{
-    font-size: 1rem;
-    line-height: 2.3rem;
-  }
-  .about-us-image-absolute{
-    right: 30px !important;
-    width: 450px;
-    height: 450px;
-    top: 60px !important;
-  }
-}
-@media only screen and (max-width: 450px){
-  .about-us-image-absolute{
-    right: -30px !important;
-    width: 450px;
-    height: 450px;
-    top: 65px !important;
-  }
+    font-size: 1.6rem;
 }
 
-.about-us-header{
-  display: flex;
-  align-items: center;
-  font-size: 1.6rem;
-}
-.about-us-header-line{
+.about-us-header-line {
     width: 50%;
     height: 3px;
     margin: 0 20px;
     border: none;
     background: linear-gradient(to right, #FFBA41, #0B0B0B);
 }
-.about-us-wrapper{
+
+/* ===== About Us - Main Wrapper ===== */
+.about-us-wrapper {
     position: relative;
     display: flex;
     justify-content: center;
@@ -143,17 +29,157 @@
     margin-bottom: 140px;
 }
 
-.about-us-button{
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  transition: background-color 0.2s;
-  cursor: pointer;
-  border: 1px solid #c8c0b0;
-  background-color: transparent;
-  color: rgba(255, 249, 192, 1);
-  font-size: 0.9rem;
+/* ===== About Us - Content ===== */
+.about-us-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 60%;
 }
-.about-us-button:hover{
-  background-color: rgba(255, 249, 192, 0.1);
+
+.about-us-content p {
+    width: 80%;
+    font-size: 1.1rem;
+    line-height: 3rem;
+}
+
+/* ===== About Us - Images ===== */
+.about-us-image {
+    margin-top: 20px;
+    margin-right: 140px;
+}
+
+.about-us-images .about-us-image-absolute {
+    position: absolute;
+    top: -30px;
+    right: 110px;
+}
+
+/* ===== About Us - Button ===== */
+.about-us-button {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+    cursor: pointer;
+    border: 1px solid #c8c0b0;
+    background-color: transparent;
+    color: rgba(255, 249, 192, 1);
+    font-size: 0.9rem;
+}
+
+.about-us-button:hover {
+    background-color: rgba(255, 249, 192, 0.1);
+}
+
+/* ===== Responsive ===== */
+
+/* ≤ 1300px */
+@media only screen and (max-width: 1300px) {
+    .about-us-wrapper {
+        padding: 10px;
+    }
+}
+
+/* ≤ 1100px */
+@media only screen and (max-width: 1100px) {
+    .about-us-image {
+        margin-top: 20px;
+        margin-right: 80px;
+    }
+    .about-us-image-absolute {
+        right: 40px !important;
+        top: -10px !important;
+    }
+    .about-us-content p {
+        width: 100%;
+        font-size: 1rem;
+        line-height: 2.5rem;
+    }
+}
+
+/* ≤ 870px */
+@media only screen and (max-width: 870px) {
+    .about-us-image {
+        margin-top: 20px;
+        width: 400px;
+        height: 400px;
+        margin-right: 0px;
+    }
+    .about-us-image-absolute {
+        right: 0px !important;
+        width: 450px;
+        height: 450px;
+        top: 20px !important;
+    }
+    .about-us-content p {
+        width: 100%;
+        font-size: 1rem;
+        line-height: 2.5rem;
+    }
+    .about-us-header h2 {
+        font-size: 2rem;
+    }
+}
+
+/* ≤ 700px */
+@media only screen and (max-width: 700px) {
+    .about-us-wrapper {
+        flex-direction: column-reverse;
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .about-us-image {
+        margin-top: 30px;
+        width: 450px;
+        height: 450px;
+    }
+    .about-us-image-absolute {
+        right: 100px !important;
+        width: 450px;
+        height: 450px;
+        top: 45px !important;
+    }
+    .about-us-content {
+        width: 90%;
+    }
+    .about-us-content p {
+        width: 100%;
+        font-size: 1.1rem;
+        line-height: 2.3rem;
+    }
+    .about-us-header h2 {
+        font-size: 2.2rem;
+    }
+}
+
+/* ≤ 600px */
+@media only screen and (max-width: 600px) {
+    .about-us-header h2 {
+        font-size: 1.4rem;
+    }
+    .about-us-content p {
+        font-size: 1rem;
+        line-height: 2.3rem;
+    }
+    .about-us-image-absolute {
+        right: 30px !important;
+        width: 450px;
+        height: 450px;
+        top: 60px !important;
+    }
+}
+
+/* ≤ 450px */
+@media only screen and (max-width: 450px) {
+    .about-us-image-absolute {
+        right: -30px !important;
+        width: 450px;
+        height: 450px;
+        top: 65px !important;
+    }
 }

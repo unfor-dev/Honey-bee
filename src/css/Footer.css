@@ -1,113 +1,125 @@
-.footer-container{
-  background-image: url('/public/section-8-bg.svg');
-  background-repeat: no-repeat;
-  background-position: top;
-}
-.footer-wrapper{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 30px 30px 10px 30px;
-  position: relative;
-}
-.footer-info-wrapper img{
-  cursor: pointer;
-}
-.footer-nav-wrapper{
-  display: flex;
-  align-items: start;
-  margin-bottom: 40px;
-}
-.footer-nav-wrapper ul{
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 7px;
-  margin: 0 100px 0 0;
-  color: #ffc24b;
-  padding: 0;
+/* ===== Footer - Container ===== */
+.footer-container {
+    background-image: url('/section-8-bg.svg');
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
-.footer-nav-wrapper li{
-  list-style: none;
-}
-.footer-nav-wrapper a{
-  line-height: 2rem;
-  text-decoration: none;
-  color: #fff9c0;
-  font-size: 1rem;
-  font-weight: 100;
-}
-.footer-nav-wrapper a:hover{
-  color: #ffc24b;
-  text-decoration: underline;
-}
-.footer-socials-wrapper{
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 40px;
-}
-@media only screen and (max-width: 1110px){
-  .footer-nav-wrapper ul{
-    gap: 3px;
-    margin: 0 50px 0 0;
-  }
-}
-@media only screen and (max-width: 900px){
-  .footer-image{
-    position: absolute;
-    right: 10px;
-    width: 200px;
-    /* opacity: 0.5; */
-  }
-  .footer-wrapper{
-    justify-content: center;
-  }
-  .footer-logo{
-    display: none;
-  }
-  .footer-nav-wrapper a{
-    line-height: 2rem;
-    text-decoration: none;
-    color: #fff9c0;
-    font-size: 0.9rem;
-    font-weight: 100;
-  }
-  .footer-nav-wrapper a{
-    line-height: 2rem;
-    text-decoration: none;
-    color: #fff9c0;
-    font-size: 0.7rem;
-    font-weight: 100;
-  }
-  .footer-socials-wrapper img{
-    width: 40px;
-  }
+/* ===== Footer - Wrapper ===== */
+.footer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 30px 10px 30px;
+    position: relative;
 }
 
-@media only screen and (max-width: 600px){
-  .footer-image{
-    opacity: 0.5;
-  }
-  .footer-wrapper{
-    padding: 20px 0 10px 0;
-  }
+/* ===== Footer - Info ===== */
+.footer-info-wrapper img {
+    cursor: pointer;
 }
-@media only screen and (max-width: 535px){
-  .footer-image{
-    opacity: 1;
-    width: 250px;
-    top: 15px;
-  }
-  .footer-wrapper{
-    justify-content: start;
-    margin-left: 30px;
-  }
-  .footer-nav-wrapper{
+
+/* ===== Footer - Navigation ===== */
+.footer-nav-wrapper {
+    display: flex;
+    align-items: start;
+    margin-bottom: 40px;
+}
+
+.footer-nav-wrapper ul {
+    display: flex;
     flex-direction: column;
     align-items: start;
-  }
+    gap: 7px;
+    margin: 0 100px 0 0;
+    color: #ffc24b;
+    padding: 0;
 }
 
+.footer-nav-wrapper li {
+    list-style: none;
+}
 
+.footer-nav-wrapper a {
+    line-height: 2rem;
+    text-decoration: none;
+    color: #fff9c0;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.footer-nav-wrapper a:hover {
+    color: #ffc24b;
+    text-decoration: underline;
+}
+
+/* ===== Footer - Socials ===== */
+.footer-socials-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+/* ===== Responsive ===== */
+
+/* ≤ 1110px */
+@media only screen and (max-width: 1110px) {
+    .footer-nav-wrapper ul {
+        gap: 3px;
+        margin: 0 50px 0 0;
+    }
+}
+
+/* ≤ 900px */
+@media only screen and (max-width: 900px) {
+    .footer-image {
+        position: absolute;
+        right: 10px;
+        width: 200px;
+        /* opacity: 0.5; */
+    }
+    .footer-wrapper {
+        justify-content: center;
+    }
+    .footer-logo {
+        display: none;
+    }
+    .footer-nav-wrapper a {
+        line-height: 2rem;
+        text-decoration: none;
+        color: #fff9c0;
+        font-weight: 100;
+        font-size: 0.7rem; /* consolidated duplicate rules */
+    }
+    .footer-socials-wrapper img {
+        width: 40px;
+    }
+}
+
+/* ≤ 600px */
+@media only screen and (max-width: 600px) {
+    .footer-image {
+        opacity: 0.5;
+    }
+    .footer-wrapper {
+        padding: 20px 0 10px 0;
+    }
+}
+
+/* ≤ 535px */
+@media only screen and (max-width: 535px) {
+    .footer-image {
+        opacity: 1;
+        width: 250px;
+        top: 15px;
+    }
+    .footer-wrapper {
+        justify-content: start;
+        margin-left: 30px;
+    }
+    .footer-nav-wrapper {
+        flex-direction: column;
+        align-items: start;
+    }
+}

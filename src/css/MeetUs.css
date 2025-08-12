@@ -1,53 +1,66 @@
-.meet-us-wrapper{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  margin-top: 70px;
-  margin-bottom: 100px;
-}
-.meet-us-content{
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  width: 35%;
-  margin-right: 40px;
-}
-.meet-us-content h2{
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-.meet-us-content p{
-  font-size: 0.9rem;
-  line-height: 2.5rem;
-}
-@media only screen and (max-width: 1100px) {
-  .meet-us-wrapper{
-    flex-direction: column-reverse;
-    padding: 10px;
-  }
-  .meet-us-content{
+/* ===== Meet Us - Wrapper ===== */
+.meet-us-wrapper {
+    display: flex;
     align-items: center;
-    width: 80%;
-    margin-right: 0;
-  }
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 70px;
+    margin-bottom: 100px;
 }
-@media only screen and (max-width: 740px) {
-  .meet-us-video{
-    width: 100%;
-  }
+
+/* ===== Meet Us - Content ===== */
+.meet-us-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 35%;
+    margin-right: 40px;
 }
-@media only screen and (max-width: 440px) {
-  .meet-us-content h2{
-    font-size: 1.8rem;
+
+.meet-us-content h2 {
+    font-size: 2rem;
     margin-bottom: 10px;
-  }
-  .meet-us-content p{
-    font-size: 0.8rem;
-    line-height: 2rem;
-  }
-  .meet-us-content{
-    width: 90%;
-  }
+}
+
+.meet-us-content p {
+    font-size: 0.9rem;
+    line-height: 2.5rem;
+}
+
+/* ===== Responsive ===== */
+
+/* ≤ 1100px */
+@media only screen and (max-width: 1100px) {
+    .meet-us-wrapper {
+        flex-direction: column-reverse;
+        padding: 10px;
+    }
+    .meet-us-content {
+        align-items: center;
+        width: 80%;
+        margin-right: 0;
+    }
+}
+
+/* ≤ 740px */
+@media only screen and (max-width: 740px) {
+    .meet-us-video {
+        width: 100%;
+    }
+}
+
+/* ≤ 440px */
+@media only screen and (max-width: 440px) {
+    .meet-us-content h2 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+    .meet-us-content p {
+        font-size: 0.8rem;
+        line-height: 2rem;
+    }
+    .meet-us-content {
+        width: 90%;
+    }
 }

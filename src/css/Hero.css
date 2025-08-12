@@ -1,51 +1,64 @@
-.hero{
-  background-image: url('./header-bg.svg');
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  width: 100%;
+/* ===== Hero - Container ===== */
+.hero {
+    background-image: url('/header-bg.svg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
 }
-.hero-wrapper{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  margin-bottom: 100px;
+
+/* ===== Hero - Wrapper ===== */
+.hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 100px;
 }
-.hero-wrapper h2{
-  font-size: 4.5rem;
-  font-weight: 600;
-  color: #ffc24b;
+
+.hero-wrapper h2 {
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: #ffc24b;
 }
-.hero-wrapper img{
-  margin-top: -130px;
+
+.hero-wrapper img {
+    margin-top: -130px;
 }
+
+/* ===== Responsive ===== */
+
+/* ≤ 750px */
 @media only screen and (max-width: 750px) {
-  .hero-wrapper h2{
-    font-size: 3.5rem;
-  }
-  .hero-wrapper img{
-    margin-top: -100px;
-  }
+    .hero-wrapper h2 {
+        font-size: 3.5rem;
+    }
+    .hero-wrapper img {
+        margin-top: -100px;
+    }
 }
+
+/* ≤ 600px */
 @media only screen and (max-width: 600px) {
-  .hero-wrapper h2{
-    font-size: 3rem;
-  }
-  .hero-wrapper img{
-    margin-top: -100px;
-    width: 550px;
-    height: 550px;
-  }
+    .hero-wrapper h2 {
+        font-size: 3rem;
+    }
+    .hero-wrapper img {
+        margin-top: -100px;
+        width: 550px;
+        height: 550px;
+    }
 }
+
+/* ≤ 510px */
 @media only screen and (max-width: 510px) {
-  .hero-wrapper h2{
-    font-size: 2.5rem;
-  }
-  .hero-wrapper img{
-    margin-top: -60px;
-    width: 450px;
-    height: 450px;
-  }
+    .hero-wrapper h2 {
+        font-size: 2.5rem;
+    }
+    .hero-wrapper img {
+        margin-top: -60px;
+        width: 450px;
+        height: 450px;
+    }
 }
