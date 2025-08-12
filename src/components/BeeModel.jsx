@@ -51,19 +51,17 @@ function BeeModel() {
       { id: "products", position: { x: -1, y: -1, z: -5 }, rotation: { x: 0, y: 0.5, z: 0 }, scale: 0.7 },
       { id: "shop", position: { x: 0.8, y: 0.1, z: 0 }, rotation: { x: 0.3, y: -0.5, z: 0 }, scale: 0.2 },
       { id: "gallery", position: { x: -0.5, y: -1, z: 0 }, rotation: { x: -0.4, y: 0.6, z: 0 }, scale: 1 },
-      { id: "beauty", position: { x: 0.8, y: -1, z: 0 }, rotation: { x: 0.3, y: -0.5, z: 0 }, scale: 0.4 },
-      { id: "meet-us", position: { x: 1, y: -0.7, z: 0 }, rotation: { x: 0.3, y: 1.3, z: 0 }, scale: 0.4 },
+      { id: "meet-us", position: { x: 0.7, y: -0.7, z: 0 }, rotation: { x: 0.3, y: 1.3, z: 0 }, scale: 0.4 },
     ];
 
     // Positions for mobile
     const arrPositionModelMobile = [
       { id: "hero", position: { x: -0.4, y: -0.1, z: 0 }, rotation: { x: 0, y: 1.5, z: 0 }, scale: 0.25 },
-      { id: "about-us", position: { x: 0.5, y: -0.2, z: -5 }, rotation: { x: 0.1, y: 0.3, z: 0 }, scale: 0.25 },
-      { id: "products", position: { x: -0.5, y: 0.8, z: -5 }, rotation: { x: 0, y: 0.5, z: 0 }, scale: 0.25 },
+      { id: "about-us", position: { x: 0.5, y: -0.2, z: -5 }, rotation: { x: 0.1, y: 0.3, z: 0 }, scale: 0.35 },
+      { id: "products", position: { x: -0.5, y: 0.8, z: -5 }, rotation: { x: 0, y: 0.5, z: 0 }, scale: 0.35 },
       { id: "shop", position: { x: 0.3, y: -1.2, z: 0 }, rotation: { x: 0.3, y: -0.5, z: 0 }, scale: 0.25 },
-      { id: "gallery", position: { x: 0, y: -0.5, z: 0 }, rotation: { x: 0, y: 1.5, z: 0 }, scale: 0.25 },
-      { id: "beauty", position: { x: 0.3, y: -1.2, z: 0 }, rotation: { x: 0.3, y: -0.5, z: 0 }, scale: 0.25 },
-      { id: "meet-us", position: { x: 0.5, y: -1, z: 0 }, rotation: { x: 0.3, y: 1.3, z: 0 }, scale: 0.25 },
+      { id: "gallery", position: { x: 0, y: -0.5, z: 0 }, rotation: { x: 0, y: 0.5, z: 0 }, scale: 0.55 },
+      { id: "meet-us", position: { x: 0, y: -0.3, z: 0 }, rotation: { x: 0, y: 0, z: 0 }, scale: 0.40 },
     ];
 
     const modelMove = () => {

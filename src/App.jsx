@@ -4,7 +4,6 @@ import AboutUs from "./components/AboutUs.jsx";
 import Products from "./components/Products.jsx";
 import Shop from "./components/Shop.jsx";
 import Gallery from "./components/Gallery.jsx";
-import Beauty from "./components/Beauty.jsx";
 import MeetUs from "./components/MeetUs.jsx";
 import Footer from "./components/Footer.jsx";
 import BeeModel from "./components/BeeModel.jsx";
@@ -17,7 +16,6 @@ function App() {
       <Products />
       <Shop />
       <Gallery />
-      <Beauty />
       <MeetUs />
       <Footer />
       <BeeModel />

@@ -39,10 +39,10 @@ function Footer() {
               <img src="./section-8-youtube.svg" width='50' alt="YouTube Logo" />
             </div>
 
-            <img src="./section-8-logo.svg" width='250' alt="Site Logo" />
+            <img className="footer-logo" src="./section-8-logo.svg" width='250' alt="Site Logo" />
           </div>
 
-          <img src="./section-8-1.svg" width='250' alt="Bee Jam" />
+          <img className="footer-image" src="./section-8-1.svg" width='250' alt="Bee Jam" />
         </div>
         </div>
       </div>
