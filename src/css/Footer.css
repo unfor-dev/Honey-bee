@@ -60,6 +60,9 @@
     gap: 15px;
     margin-bottom: 40px;
 }
+.footer-image{
+    z-index: -1;
+}
 
 /* ===== Responsive ===== */
 
@@ -77,7 +80,6 @@
         position: absolute;
         right: 10px;
         width: 200px;
-        /* opacity: 0.5; */
     }
     .footer-wrapper {
         justify-content: center;

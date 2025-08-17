@@ -13,7 +13,7 @@ function BeeModel() {
     let mixer;
 
     const loader = new GLTFLoader();
-    loader.load("/demon_bee_full_texture.glb", (gltf) => {
+    loader.load("/beee.glb", (gltf) => {
       bee = gltf.scene;
       bee.scale.set(0.4, 0.4, 0.4);
       bee.rotation.y = Math.PI / 0.6;
