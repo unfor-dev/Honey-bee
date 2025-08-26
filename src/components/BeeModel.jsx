@@ -13,7 +13,7 @@ function BeeModel() {
     let mixer;
 
     const loader = new GLTFLoader();
-    loader.load("/beee.glb", (gltf) => {
+    loader.load("/bee.glb", (gltf) => {
       bee = gltf.scene;
       bee.scale.set(0.4, 0.4, 0.4);
       bee.rotation.y = Math.PI / 0.6;
@@ -29,13 +29,6 @@ function BeeModel() {
     renderer.setSize(window.innerWidth, window.innerHeight);
     const container = document.getElementById("container3D");
     container.appendChild(renderer.domElement);
-
-    const ambientLight = new THREE.AmbientLight(0xffffff, 1.3);
-    scene.add(ambientLight);
-
-    const topLight = new THREE.DirectionalLight(0xffffff, 1);
-    topLight.position.set(500, 500, 500);
-    scene.add(topLight);
 
     const reRender3D = () => {
       requestAnimationFrame(reRender3D);
@@ -56,12 +49,12 @@ function BeeModel() {
 
     // Positions for mobile
     const arrPositionModelMobile = [
-      { id: "hero", position: { x: -0.4, y: -0.1, z: 0 }, rotation: { x: 0, y: 1.5, z: 0 }, scale: 0.25 },
-      { id: "about-us", position: { x: 0.5, y: -0.2, z: -5 }, rotation: { x: 0.1, y: 0.3, z: 0 }, scale: 0.35 },
+      { id: "hero", position: { x: -0.4, y: 0.1, z: 0 }, rotation: { x: 0, y: 1.5, z: 0 }, scale: 0.25 },
+      { id: "about-us", position: { x: 0.5, y: -0.2, z: -5 }, rotation: { x: 0.1, y: -0.7, z: 0 }, scale: 0.35 },
       { id: "products", position: { x: -0.5, y: 0.8, z: -5 }, rotation: { x: 0, y: 0.5, z: 0 }, scale: 0.35 },
-      { id: "shop", position: { x: 0.3, y: -1.2, z: 0 }, rotation: { x: 0.3, y: -0.5, z: 0 }, scale: 0.25 },
-      { id: "gallery", position: { x: 0, y: -0.5, z: 0 }, rotation: { x: 0, y: 0.5, z: 0 }, scale: 0.55 },
-      { id: "meet-us", position: { x: 0, y: -0.3, z: 0 }, rotation: { x: 0, y: 0, z: 0 }, scale: 0.40 },
+      { id: "shop", position: { x: 0.3, y: -0.8, z: 0 }, rotation: { x: 0.1, y: -0.5, z: 0 }, scale: 0.25 },
+      { id: "gallery", position: { x: 0, y: -0.5, z: 0 }, rotation: { x: -0.5, y: 0.2, z: 0 }, scale: 0.55 },
+      { id: "meet-us", position: { x: 0.2, y: -0.3, z: 0 }, rotation: { x: 0, y: 0, z: 0 }, scale: 0.25 },
     ];
 
     const modelMove = () => {
