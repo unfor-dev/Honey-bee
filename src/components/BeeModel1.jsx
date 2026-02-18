@@ -1,9 +1,10 @@
 import { useEffect } from "react";
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader.js";
 import { gsap } from "gsap";
 
-function BeeModel() {
+function BeeModel1() {
   useEffect(() => {
     const camera = new THREE.PerspectiveCamera(10, window.innerWidth / window.innerHeight, 0.1, 1000);
     camera.position.z = 13;
@@ -12,8 +13,12 @@ function BeeModel() {
     let bee;
     let mixer;
 
+    const dracoLoader = new DRACOLoader();
+    dracoLoader.setDecoderPath("https://www.gstatic.com/draco/versioned/decoders/1.5.7/");
+
     const loader = new GLTFLoader();
-    loader.load("/bee.glb", (gltf) => {
+    loader.setDRACOLoader(dracoLoader);
+    loader.load("/bee1.glb", (gltf) => {
       bee = gltf.scene;
       bee.scale.set(0.4, 0.4, 0.4);
       bee.rotation.y = Math.PI / 0.6;
@@ -85,7 +90,7 @@ function BeeModel() {
       renderer.setSize(window.innerWidth, window.innerHeight);
       camera.aspect = window.innerWidth / window.innerHeight;
       camera.updateProjectionMatrix();
-      modelMove(); // Update model when resizing
+      modelMove();
     });
 
     return () => {
@@ -97,4 +102,4 @@ function BeeModel() {
   return <div id="container3D" style={{ top: 0, left: 0 }} />;
 }
 
-export default BeeModel;
+export default BeeModel1;
